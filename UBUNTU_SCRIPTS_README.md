@@ -273,7 +273,7 @@ sudo systemctl restart nginx
 ├── components/                 # React components
 ├── logs/                       # Application logs
 ├── .env.local                  # Frontend environment variables
-├── ecosystem.config.js         # PM2 configuration
+├── ecosystem.config.cjs         # PM2 configuration
 ├── deploy-ubuntu.sh           # Deployment script
 ├── quick-start-ubuntu.sh      # Quick start script
 ├── update-ubuntu.sh           # Update script

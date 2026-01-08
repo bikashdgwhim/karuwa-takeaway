@@ -450,7 +450,7 @@ npm run build
 
 ### Step 6: Configure PM2
 
-Create `ecosystem.config.js`:
+Create `ecosystem.config.cjs`:
 
 ```javascript
 module.exports = {
@@ -469,7 +469,7 @@ module.exports = {
 Start backend:
 
 ```bash
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 pm2 save
 pm2 startup
 ```

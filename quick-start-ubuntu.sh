@@ -61,7 +61,7 @@ pm2 delete all 2>/dev/null || true
 
 # Start application
 echo -e "${GREEN}[8/8]${NC} Starting application..."
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 pm2 save
 pm2 startup
 

@@ -8,7 +8,7 @@
 npm install -g pm2
 
 # Start the application
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 
 # Save the PM2 process list (so it persists after reboot)
 pm2 save
@@ -84,10 +84,10 @@ cd ~/karuwa-takeaway
 ### Environment Management
 ```bash
 # Start with production environment
-pm2 start ecosystem.config.js --env production
+pm2 start ecosystem.config.cjs --env production
 
 # Start with development environment
-pm2 start ecosystem.config.js --env development
+pm2 start ecosystem.config.cjs --env development
 ```
 
 ### Scaling (Multiple Instances)
@@ -101,7 +101,7 @@ pm2 scale karuwa-backend max
 
 ### Memory Management
 ```bash
-# Restart if memory usage exceeds 1GB (already configured in ecosystem.config.js)
+# Restart if memory usage exceeds 1GB (already configured in ecosystem.config.cjs)
 # This happens automatically
 
 # View memory usage

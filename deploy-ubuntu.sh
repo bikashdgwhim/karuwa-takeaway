@@ -258,10 +258,10 @@ configure_pm2() {
     
     cd "$APP_DIR"
     
-    # Check if ecosystem.config.js exists
-    if [ ! -f "ecosystem.config.js" ]; then
+    # Check if ecosystem.config.cjs exists
+    if [ ! -f "ecosystem.config.cjs" ]; then
         print_message "Creating PM2 ecosystem configuration..."
-        cat > ecosystem.config.js << 'EOF'
+        cat > ecosystem.config.cjs << 'EOF'
 module.exports = {
   apps: [
     {
@@ -302,7 +302,7 @@ module.exports = {
 EOF
         print_message "PM2 ecosystem configuration created"
     else
-        print_warning "ecosystem.config.js already exists"
+        print_warning "ecosystem.config.cjs already exists"
     fi
     
     # Create logs directory
@@ -319,7 +319,7 @@ start_application() {
     pm2 delete all 2>/dev/null || true
     
     # Start application
-    pm2 start ecosystem.config.js
+    pm2 start ecosystem.config.cjs
     
     # Save PM2 process list
     pm2 save
