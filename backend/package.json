@@ -1,0 +1,18 @@
+{
+    "name": "karuwa-backend",
+    "version": "1.0.0",
+    "description": "Backend for Karuwa Takeaway",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "seed": "node seed.js"
+    },
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "multer": "^2.0.2",
+        "nodemailer": "^6.9.8",
+        "sqlite3": "^5.1.7"
+    }
+}
