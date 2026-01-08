@@ -432,7 +432,7 @@ cd karuwa-takeaway
 # Setup backend
 cd backend
 npm install --production
-cp .env.production .env
+cp .env.example .env
 
 # Edit .env with your settings
 nano .env

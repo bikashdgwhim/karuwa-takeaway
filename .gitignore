@@ -30,6 +30,10 @@ backend/uploads/
 *.sqlite
 *.sqlite3
 
+# PM2 logs
+logs/
+*.log
+
 # Environment files
 .env
 .env.local
